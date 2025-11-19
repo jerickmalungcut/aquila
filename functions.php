@@ -6,6 +6,7 @@
 // Enqueue Stylesheet
 function aquila_enqueue_scripts() {
     wp_enqueue_style( 'aquila-style', get_stylesheet_uri()); // Enqueue main stylesheet
+    wp_enqueue_style( 'aquila-tailwind', get_template_directory_uri() . '/assets/css/output.css', array(), '1.0.0', 'all' ); // Enqueue Tailwind CSS
     wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0.0', true); // Enqueue main JavaScript file
 
 }
